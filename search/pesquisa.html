@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <title>Online SHOP</title>
+  </head>
+
+  <body class="d-flex flex-column" style="height: 100vh">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg text-light bg-success">
+        <div class="container-fluid px-4">
+          <a href="../index.html" class="navbar-brand">
+            <img src="../images/logo.png" width="142" />
+          </a>
+          <button
+            class="navbar-toggler btn-collapse"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list icon-collapse"></i>
+          </button>
+          <div class="collapse navbar-collapse g-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-header gap-3">
+              <li class="nav-item">
+                <a class="text-light link-product" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-light link-product" href="./pesquisa.html"
+                  >Pesquisar Produtos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light link-product"
+                  href="../details/detalhes.html"
+                  >Detalhes de cada Produto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container py-4" id="produtosEmLista">
+      <div class="d-flex justify-content-between gap-4 pb-4 title-input-search">
+        <h2>Resultado de Pesquisa</h2>
+        <div class="input-group" style="max-width: 400px">
+          <input
+            class="form-control"
+            type="search"
+            id="inputSearch"
+            placeholder="Pesquise os produtos que desejar"
+            aria-label="Pesquise os produtos que desejar"
+          />
+          <button type="submit" id="buttonSearch" class="btn btn-success">
+            <i class="bi bi-search-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div id="productList" class="list-group">
+        <div id="loading-products-list">
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-success text-white d-flex justify-content-center align-items-center mt-auto"
+    >
+      Todos os direitos reservados
+    </footer>
+
+    <script type="module" src="./pesquisa.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
