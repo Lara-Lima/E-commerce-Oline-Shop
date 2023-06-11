@@ -84,6 +84,7 @@ const displayProductList = (products) => {
         const productElement = createProductElement(product);
         productListElement.appendChild(productElement);
       });
+    addClickEventToProducts();
   });
 };
 
